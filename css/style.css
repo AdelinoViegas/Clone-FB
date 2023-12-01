@@ -188,11 +188,12 @@ section#container-principal main#info2 input{
 	min-width: 90px;
 	height: 112px;
 	margin:0px 12px; 
-	border: 2.5px solid  #8d949e;/* #bec3c9;*/
+	border: 2.5px solid  #8d949e;
 	font-size: 40px;
 	padding-bottom: 46px;
 	padding-left: 47px;
 	border-radius:56px;
+	outline:none;
 }
 
 section#container-principal main#info2 button{
