@@ -8,152 +8,152 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-<div id="topo">
-	<div id="span1">
-		<p>Modo gratuito</p>
-		<div id="interrog"><span>?</span></div>
-	</div>
-	<div id="span2">
-	  Ver Fotos
-     </div>
-</div>
-<header id="menuf">
 
-	<section id="n1">
-		<img src="img/facebook.png" alt="facebook">
-		<input type="text" name="texto" id="ctx" placeholder="Pesquisa no Facebook">
-		<button>Pesquisar</button>
+<div class="top">
+	<div class="top__info1">
+		<p class="top__info1__paragraph">Modo gratuito</p>
+		<div class="top__info1__circle"><span class="top__circle__interrogation">?</span></div>
+	</div>
+	<div class="top__info2">Ver Fotos</div>
+</div>
+
+<header class="menu">
+
+	<section class="menu__top">
+		<img class="menu__top__img" src="img/facebook.png" alt="facebook">
+		<input type="text" name="texto" class="menu__top__input" placeholder="Pesquisa no Facebook">
+		<button class="menu__top__button">Pesquisar</button>
 	</section>
 
-	<section id="n2">
-		<a href="#">Página inicial</a>
-		<a href="#">Perfil</a>
-		<a href="#">Mensagens(40)</a>
-		<a href="#">Notificações</a>
-		<a href="#">Chat(246)</a>
-		<a href="#">Amigos(101)</a>
-		<a href="#">Páginas</a>
-		<a href="#">Grupos(99)</a>
-		<a href="#">Covid-19</a>
-		<a href="#">Menu</a>
+	<section class="menu__bottom">
+		<a class="menu__bottom__link link--hover" href="#">Página inicial</a>
+		<a class="menu__bottom__link link--hover" href="#">Perfil</a>
+		<a class="menu__bottom__link link--hover link--yellow" href="#">Mensagens(40)</a>
+		<a class="menu__bottom__link link--hover" href="#">Notificações</a>
+		<a class="menu__bottom__link link--hover link--yellow" href="#">Chat(246)</a>
+		<a class="menu__bottom__link link--hover" href="#">Amigos(101)</a>
+		<a class="menu__bottom__link link--hover" href="#">Páginas</a>
+		<a class="menu__bottom__link link--hover link--yellow" href="#">Grupos(99)</a>
+		<a class="menu__bottom__link link--hover" href="#">Covid-19</a>
+		<a class="menu__bottom__link link--hover" href="#">Menu</a>
 	</section>
 </header>
 
-<section id="container-principal">
-	<main id="info">
-		<p>Partilhar com:</p>
-		<p>Público</p>
-	</main>
+<section class="section_pub">
+	<div class="section_pub__info1">
+		<p class="section_pub__info1__text1 info--inline-block">Partilhar com:</p>
+		<p class="section_pub__info1__text2 info--inline-block">Público</p>
+	</div>
 
-	<main id="info2">
-		<img src="img/vida.jpg" width="100" height="100">
-		<input type="text" name="texto" placeholder="Em que estás a pensar?">
-		<button>Publicar</button>
-	</main>
+	<div class="section_pub__info2">
+		<img class="section_pub__info2__img" src="img/vida.jpg">
+		<input class="section_pub__info2__input" type="text" name="texto" placeholder="Em que estás a pensar?">
+		<button class="section_pub__info2__button">Publicar</button>
+	</div>
 
-	<main id="info3">
-		<span id="quad"></span>
-		<p>Foto</p>
-		<span id="circ"></span>
-		<p>A sentir-me</p>
-		<span id="ponto">...</span>
-		<p>Mais</p>
-	</main>
-
+	<div class="section_pub__info3">
+		<span class="section_pub__info3__square info3--inline-block"></span>
+		<p class="section_pub__info3_text">Foto</p>
+		<span class="section_pub__info3__circle info3--inline-block"></span>
+		<p class="section_pub__info3_text">A sentir-me</p>
+		<span class="section_pub__info3__point info3--inline-block">...</span>
+		<p class="section_pub__info3_text">Mais</p>
+	</div>
 </section>
-<section id="mae">
 
-	<section id="pedido-amizades">
-		<p id="titulo">Pedidos de amizade</p>
-		<article id="dado1">
+
+	<section class="friendship">
+		<p class="friendship__title">Pedidos de amizade</p>
+		<article class="friendship__info">
 			<img src="img/f1.jpg">
 		<div>
-			<p>O Adelino Viegas Trindade</p>
-			<p>1 amigo em comum</p>
-			<button id="b1">Confirmar</button>
-			<button id="b2">Eliminar pedido</button>
+			<p class="friendship__info__text1">O Adelino Viegas Trindade</p>
+			<p class="friendship__info__text2">1 amigo em comum</p>
+			<button class="friendship__info__confirm">Confirmar</button>
+			<button class="friendship__info__delete">Eliminar pedido</button>
 		</div>
 		</article>
 				
-		<article id="dado1">
+		<article class="friendship__info">
 			<img src="img/f2.jpg">
 		<div>
-			<p>Afonso Viegas</p>
-			<p>3 amigo em comum</p>
-			<button id="b1">Confirmar</button>
-			<button id="b2">Eliminar pedido</button>
+			<p class="friendship__info__text1">Afonso Viegas</p>
+			<p class="friendship__info__text2">3 amigo em comum</p>
+			<button class="friendship__info__confirm">Confirmar</button>
+			<button class="friendship__info__delete">Eliminar pedido</button>
 		</div>
 		</article>
 
-		<article id="dado1">
+		<article class="friendship__info">
 			<img src="img/f3.jpg">
 		<div>
-			<p>Trindade Viegas Afonso</p>
-			<p>7 amigo em comum</p>
-			<button id="b1">Confirmar</button>
-			<button id="b2">Eliminar pedido</button>
+			<p class="friendship__info__text1">Trindade Viegas Afonso</p>
+			<p class="friendship__info__text2">7 amigo em comum</p>
+			<button class="friendship__info__confirm">Confirmar</button>
+			<button class="friendship__info__delete">Eliminar pedido</button>
 		</div>
 		</article>
 
-		<div id="amigos">
-			<p>Ver todos os pedidos de amizade(102)</p>
-		     <p class="normal">Ocultar</p>	
+		<div class="friends_request">
+			 <p class="friends_request__text">Ver todos os pedidos de amizade(102)</p>
+		     <p class="friends_request__text">Ocultar</p>	
 		</div>
 
     </section>
 
-	<article id="notificacao">
-    	
-		<p><span id="nof"></span>Adelino Viegas,Afonso Trindade e 9 outras 
+	<article class="notification">	
+		<p class="notification__text1">
+         <span class="notification__text1__square"></span>Adelino Viegas,Afonso Trindade e 9 outras 
     	pessoas fazem anos hoje.</p>
-    	<p>Apagar notificações</p>
+    	<p class="notification__text2">Apagar notificações</p>
     </article>
 
-	<article class="noticia">
-    	<span id="nome">Afonso Viegas Trindade</span>
-		<p>Assim diz o SENHOR: Maldito o homem que confia no homem, e faz da carne o seu braço, e aparta o seu coração do SENHOR! </p>
-		<p>Jr 17:5 🙏🙏 </p>
-		<div>22min . Público</div>
-			<a href="#"> 🤍 5</a> 
-			<span>.</span><a href="#">Gosto</a> 
-			<span>.</span><a href="#">Reagir</a> 
-			<span>.</span><a href="#">2 comentários</a>
-			<span>.</span><a href="#">Partilhar</a> 
-			<span>.</span><a href="#">História Completa</a>
-			<span>.</span><a href="#">Guardar</a>
-			<span>.</span><a href="#">Mais</a>
-    </article>
-	<article class="noticia">
-    	<span id="nome">Viegas Afonso da Trindade</span>
-		<div class="contaner">Deus é o rei acima dele não um outro semelhante a ele🙏🙏✨❤ </div>
-		<div>12min . Público</div>
-		<a href="#"> 🤍 455</a> 
-		<span>.</span><a href="#">Gosto</a> 
-		<span>.</span><a href="#">Reagir</a> 
-		<span>.</span><a href="#">23 comentários</a>
-		<span>.</span><a href="#">Partilhar</a> 
-		<span>.</span><a href="#">História Completa</a>
-		<span>.</span><a href="#">Guardar</a>
-		<span>.</span><a href="#">Mais</a>
+	<article class="news">
+    	<span class="news__name">Afonso Viegas Trindade</span>
+		<p class="news__text">Assim diz o SENHOR: Maldito o homem que confia no homem, e faz da carne o seu braço, e aparta o seu coração do SENHOR! </p>
+		<p class="news__text">Jr 17:5 🙏🙏 </p>
+		<div class="news__time">22min . Público</div>
+			<a class="news__link news__link--white" href="#"> 🤍 5</a> 
+			<span>.</span><a class="news__link news__link--white" href="#">Gosto</a> 
+			<span>.</span><a class="news__link news__link--white" href="#">Reagir</a> 
+			<span>.</span><a class="news__link news__link--white" href="#">2 comentários</a>
+			<span>.</span><a class="news__link news__link--white" href="#">Partilhar</a> 
+			<span>.</span><a class="news__link news__link--white" href="#">História Completa</a>
+			<span>.</span><a class="news__link news__link--white" href="#">Guardar</a>
+			<span>.</span><a class="news__link news__link--white" href="#">Mais</a>
     </article>
 
-	<article class="noticia">
-    	<span id="nome">Trindade Viegas</span>
-		<p class="maiorp">GPS: a caminho de Luanda ✈✈ </p>
-		<div>3min . Público</div>
-		<a href="#"> 🤍 4</a> 
-		<span>.</span><a href="#">Gosto</a> 
-		<span>.</span><a href="#">Reagir</a> 
-		<span>.</span><a href="#">comentar</a>
-		<span>.</span><a href="#">Partilhar</a> 
-		<span>.</span><a href="#">História Completa</a>
-		<span>.</span><a href="#">Guardar</a>
-		<span>.</span><a href="#">Mais</a>
+	<article class="news">
+    	<span class="news__name">Viegas Afonso da Trindade</span>
+		<p class="news__container">Deus é o rei acima dele não um outro semelhante a ele🙏🙏✨❤ </p>
+		<div class="news__time">12min . Público</div>
+		<a class="news__link news__link--white" href="#"> 🤍 455</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Gosto</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Reagir</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">23 comentários</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Partilhar</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">História Completa</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Guardar</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Mais</a>
     </article>
 
-	<article class="noticia">
-    	<span id="nome">Adelino Trindade Viegas</span>
-		<p>
+	<article class="news">
+    	<span class="news__name">Trindade Viegas</span>
+		<p class="news__title">GPS: a caminho de Luanda ✈✈ </p>
+		<div class="news__time">3min . Público</div>
+		<a class="news__link news__link--white" href="#"> 🤍 4</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Gosto</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Reagir</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">comentar</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Partilhar</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">História Completa</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Guardar</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Mais</a>
+    </article>
+
+	<article class="news">
+    	<span class="news__name">Adelino Trindade Viegas</span>
+		<p class="news__text">
 			Os 10 mandamentos
 	
 	1-Não terás outros deuses diante de mim.
@@ -168,92 +168,89 @@
 	9-Não dirás falso testemunho contra o teu próximo.
 	10-Não cobiçarás a casa do teu próximo, não cobiçarás a mulher do teu próximo, nem o seu servo, nem a sua serva, nem o seu boi, nem o seu jumento, nem coisa alguma do teu próximo.
 		 </p>
-		<div>48min . Amigos</div>
-		<a href="#"> 🤍 5</a> 
-		<span>.</span><a href="#">Gosto</a> 
-		<span>.</span><a href="#">Reagir</a> 
-		<span>.</span><a href="#">12 comentários</a>
-		<span>.</span><a href="#">Partilhar</a> 
-		<span>.</span><a href="#">História Completa</a>
-		<span>.</span><a href="#">Guardar</a>
-		<span>.</span><a href="#">Mais</a>
+		<div class="news__time">48min . Amigos</div>
+		<a class="news__link news__link--white" href="#"> 🤍 5</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Gosto</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Reagir</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">12 comentários</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Partilhar</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">História Completa</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Guardar</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Mais</a>
     </article>
 
-	<article class="noticia">
-    	<span id="nome">Adelino Trindade Viegas</span>
-		<span id="estado">actualizou a sua foto do perfil</span>
-		<p>Deus sempre no comando😇😇</p>
+	<article class="news">
+    	<span class="news__name">Adelino Trindade Viegas</span>
+		<span class="news__state">actualizou a sua foto do perfil</span>
+		<p class="news__title">Deus sempre no comando😇😇</p>
 		<img src="img/f3.jpg" alt="foto do facebook">
-		<div>8min . Amigos</div> 
-		<a href="#"> 🤍 142</a> 
-		<span>.</span><a href="#">Gosto</a> 
-		<span>.</span><a href="#">Reagir</a> 
-		<span>.</span><a href="#">62 comentários</a>
-		<span>.</span><a href="#">Partilhar</a> 
-		<span>.</span><a href="#">História Completa</a>
-		<span>.</span><a href="#">Guardar</a>
-		<span>.</span><a href="#">Mais</a>
+		<div class="news__time">8min . Amigos</div> 
+		<a class="news__link news__link--white" href="#"> 🤍 142</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Gosto</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Reagir</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">62 comentários</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Partilhar</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">História Completa</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Guardar</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Mais</a>
     </article>
 
-	<article class="noticia">
-    	<span id="nome">Empresa Viegas</span>
-		<p>Devemos sempre buscar a Deus indepedente das circunstâncias que estivermos a passar a fé, a esperânça e o amor deve prevalecer❤🙏🙏</p>
-		<div>terça-feira ás 6h . Amigos</div> 
-		<a href="#"> 🤍 2</a> 
-		<span>.</span><a href="#">Gosto</a> 
-		<span>.</span><a href="#">Reagir</a> 
-		<span>.</span><a href="#">comentar</a>
-		<span>.</span><a href="#">Partilhar</a> 
-		<span>.</span><a href="#">História Completa</a>
-		<span>.</span><a href="#">Guardar</a>
-		<span>.</span><a href="#">Mais</a>
+	<article class="news">
+    	<span class="news__name">Empresa Viegas</span>
+		<p class="news__text">Devemos sempre buscar a Deus indepedente das circunstâncias que estivermos a passar a fé, a esperânça e o amor deve prevalecer❤🙏🙏</p>
+		<div class="news__time">terça-feira ás 6h . Amigos</div> 
+		<a class="news__link news__link--white" href="#"> 🤍 2</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Gosto</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">Reagir</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">comentar</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Partilhar</a> 
+		<span>.</span><a class="news__link news__link--white" href="#">História Completa</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Guardar</a>
+		<span>.</span><a class="news__link news__link--white" href="#">Mais</a>
     </article>
 
 
-</section>
+<a href="#" class="more__history">Ver mais histórias</a>
 
-<a href="#" id="vermais">Ver mais histórias</a>
-
-<div id="footer1">
-         <img src="img/vida.jpg" alt="vida">
-         <div class="divp">
-			 <p>Adelino Viegas</p>
-			 <main>
-				<p>Perfil</p>
-				<span>.</span>
-				<p>Fotos</p>
-			 </main>
-		 </div>
-
+<div class="footer_first">
+	<img class="footer_first__img" src="img/vida.jpg" alt="vida">
+	<div class="footer_first__container">
+		<p class="container__text">Adelino Viegas</p>
+		<main class="footer_first__info">
+		   <p class="footer_first__info__text">Perfil</p>
+		   <span class="footer_first__info__point">.</span>
+		   <p class="footer_first__info__text">Fotos</p>
+		</main>
+	</div>
 </div>
 
-<div id="footer2">
-		<p>Amigos</p>
-		<p id="grid2">SMS</p>
-		<p>Grupos</p>
-		<p>Eventos</p>
-		<p>Páginas</p>
+<div class="footer_second">
+		<p class="footer_second__text">Amigos</p>
+		<p class="footer_second__text footer_second--msg">SMS</p>
+		<p class="footer_second__text">Grupos</p>
+		<p class="footer_second__text">Eventos</p>
+		<p class="footer_second__text">Páginas</p>
 </div>
 
-<div id="footer3">
-   <div id="info1">
-       <img src="img/facebook.png" alt="facebook">
-	   <input type="text" id="ftx1">
-	   <input type="button" id="ftx2"  value="Pesquisar">
+<div class="footer_third">
+   <div class="footer_third__info">
+       <img class="footer_third__img" src="img/facebook.png" alt="facebook">
+	   <input class="footer_third__input" type="text"">
+	   <input class="footer_third__button" type="button" value="Pesquisar">
    </div>
 </div>
 
-<div id="footer4">
-	<p>Criar Página</p>
-	<p>Comunicar um problema</p>
-	<p>Ajuda</p>
-	<p>Termos e política</p>
-	<p>Definições e privacidade</p>
-	<p>Terminar sessão (Adelino)</p>
+<div class="footer_fourth">
+	<p class="footer_fourth__text">Criar Página</p>
+	<p class="footer_fourth__text">Comunicar um problema</p>
+	<p class="footer_fourth__text">Ajuda</p>
+	<p class="footer_fourth__text">Termos e política</p>
+	<p class="footer_fourth__text">Definições e privacidade</p>
+	<p class="footer_fourth__text">Terminar sessão (Adelino)</p>
  </div>
  
- <div id="footerf">
-	<a href="">Voltar ao início</a>
+ <div class="footer_final">
+	<a class="footer_final__link" href="#">Voltar ao início</a>
  </div>
 
 </body>

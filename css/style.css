@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+/*Reset css*/
 *{margin: 0; padding:0; box-sizing:border-box; font-family: arial;}
 a{text-decoration: none;}
 body{background-color: #dddfe2;}
@@ -6,7 +8,8 @@ section#mae{
 	margin: 0 15px;
 }
 
-div#topo{
+/*Top da página*/
+.top{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -14,22 +17,20 @@ div#topo{
 	height: 100px;
 	background-color: #7537b3;
 	font-size: 32.5px; 
-	color:#fff;
-	
+	color:#fff;	
 }
-div#span1{
+
+.top__info1{
 	display: flex;
 	align-items: center;
 	padding-left: 20px;	
 }
 
-div#span1 p{
+.top__info1__paragraph{
 	line-height: 100px;
-	
-	
 }
 
- div#interrog{
+ .top__info1__circle{
  	font-size: 32px;
  	width: 42px;
  	height:42px;
@@ -44,13 +45,13 @@ div#span1 p{
 	cursor:pointer;
 }
 
- div#interrog span{
+.top__circle__interrogation{
  	position:relative;
  	top: -3px;
  	left: 4px;
 }
 
- div#span2{
+ .top__info2{
     font-size: 30px; 
  	margin-right: 19px;
  	line-height: 70px;
@@ -63,15 +64,18 @@ div#span1 p{
 	cursor:pointer; 
  }
 
-/*menu do facebook*/
-header#menuf{
+
+
+
+/*menu da página*/
+.menu{
 	width: 100%;
 	height: 100%;
 	background-color:#3b5998;
 	padding-bottom:12px;
 }
 
-header#menuf section#n1{
+.menu__top{
 	width: 98.5%;
 	display: grid;
 	grid-template-columns: 48px auto 144px;
@@ -80,13 +84,13 @@ header#menuf section#n1{
 	padding: 8px 10px 0px 10px; 
 }
 
-header#menuf section#n1 img{
+.menu__top__img{
 	cursor:pointer;
 	width: 52px;
 	height:52px;
 }
 
-header#menuf section#n1 input#ctx{
+.menu__top__input{
 	min-width: 200px;
    height: 57px;
    font-size:33px;
@@ -96,7 +100,7 @@ header#menuf section#n1 input#ctx{
    padding:0 5px;
 }
 
-header#menuf section#n1 button{
+.menu__top__button{
 	width: 156px;
 	height: 50px;
 	outline:none;
@@ -109,7 +113,7 @@ header#menuf section#n1 button{
 }
 
 
-header#menuf section#n2{
+.menu__bottom{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
@@ -118,56 +122,54 @@ header#menuf section#n2{
    margin-top:12px;
 }
 
-header#menuf section#n2 a{
+.menu__bottom__link{
 	text-decoration: none;
 	color: #fff;
 	padding: 4px 10px;
 	  
 }
 
-header#menuf section#n2 a:hover,header#menuf section#n2 a:nth-child(6):hover,
-header#menuf section#n2 a:nth-child(8):hover,header#menuf section#n2 a:nth-child(3):hover{
+.link--hover:hover{
 	background-color: #fff;
 	color: #3b5998;
-	padding: 4px 10px;  
+	padding: 4px 10px; 
 	  
 }
 
-header#menuf section#n2 a:nth-child(6),header#menuf section#n2 a:nth-child(8),
-header#menuf section#n2 a:nth-child(3){
+.link--yellow{
 	color: #fff496;
 	font-weight: bold;
 }
 
 
-/*info*/
-section#container-principal{
+/*pesquisa e informações adicionais*/
+.section_pub{
 	width:100%;
 	height:100%;
 	background-color: #dddfe2;
 }
 
 
-section#container-principal main#info {
+.section_pub__info1 {
 	font-size: 30px;
 	padding: 23px 0px 0px 13px;
 }
 
-section#container-principal main#info p{
+.info--inline-block{
 	display: inline-block;
 }
 
-section#container-principal main#info p:first-child{
+.section_pub__info1__text1{
 	color: #4b4f56;
 }
 
-section#container-principal main#info p:last-child{
+.section_pub__info1__text2{
 	color: #3b5998;
 }
 
 
 
-section#container-principal main#info2 {
+.section_pub__info2 {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 120px auto 238px;
@@ -177,14 +179,15 @@ section#container-principal main#info2 {
 
 }
 
-section#container-principal main#info2 img{
+.section_pub__info2__img{
+	width:100px;
 	height: 112px;
 	border:1px solid black;
 	margin: 0px 11px;
 	filter:blur(1px);
 }
 
-section#container-principal main#info2 input{
+.section_pub__info2__input{
 	min-width: 90px;
 	height: 112px;
 	margin:0px 12px; 
@@ -196,7 +199,7 @@ section#container-principal main#info2 input{
 	outline:none;
 }
 
-section#container-principal main#info2 button{
+.section_pub__info2__button{
 	height: 112px;
 	margin:0px 12px;
 	font-size: 30px;
@@ -206,45 +209,46 @@ section#container-principal main#info2 button{
     color: #4b4f56;
 }
 
-section#container-principal main#info3 {
+
+.section_pub__info3 {
 	font-size: 32px;
 	margin: 32px 0px 0px 15px;
 	padding-bottom: 22px;
 }
 
-section#container-principal main#info3 p{
+.section_pub__info3_text{
 	display: inline-block;
     margin-right: 22px;
     color: #4b4f56;
     font-weight: bolder;
 }
 
-section#container-principal main#info3 p:hover{
+.section_pub__info3_text:hover{
     background: #4b4f56;
     color: #fff;
     cursor: context-menu;
 }
 
-section#container-principal main#info3 span{
+.info3--inline-block{
 	display: inline-block;
 	cursor: pointer;
 }
 
-section#container-principal main#info3 span#quad{
+.section_pub__info3__square{
 	width: 26px;
 	height: 26px;
 	background-color: black;
 }
 
 
-section#container-principal main#info3 span#circ{
+.section_pub__info3__circle{
 	width: 26px;
 	height: 26px;
 	border-radius: 13px;
 	background-color: black;
 }
 
-section#container-principal main#info3 span#ponto{
+#section_pub__info3__point{
 	font-size: 35px;
 	font-weight: bolder;
 	position: relative;
@@ -255,7 +259,7 @@ section#container-principal main#info3 span#ponto{
 
 
 /*Pedidos de amizade*/
-section#pedido-amizades{
+ .friendship{
 	width: 100%;
 	height: 100%;
 	background-color: #f5f6f7;
@@ -264,7 +268,7 @@ section#pedido-amizades{
 }
 
 
-section#pedido-amizades p#titulo{
+.friendship__title{
 	padding:12.5px 12px 12.5px 10px;
 	font-size: 32px;
 	font-weight: bolder;
@@ -272,63 +276,59 @@ section#pedido-amizades p#titulo{
 	border-bottom:1.5px solid #bec3c9;
 }
 
-section#pedido-amizades article#dado1 {
+.friendship__info{
 	display: flex;
 	align-items: center;
 	border-bottom:1.5px solid #bec3c9;
 	background-color: #fff;
 }
 
-section#pedido-amizades article#dado1 img{
-
+.friendship__info img{
 	padding: 11.5px;
 	width: 146.5px;
 	height:146.5px;
-	
 }
 
 
-section#pedido-amizades article#dado1 p:first-child{
-         margin-top:12.5px;
-         color:#365899;
-         font-size: 32px;
-         font-weight: bolder;
-         cursor:pointer;   
+.friendship__info__text1{
+	margin-top:12.5px;
+	color:#365899;
+	font-size: 32px;
+	font-weight: bolder;
+	cursor:pointer;   
 }
 
-section#pedido-amizades article#dado1 p:first-child:hover{
-		background-color:#3b5998;
-        color: #fff;    
+.friendship__info__text1:hover{
+	background-color:#3b5998;
+    color: #fff;    
 }
 
-section#pedido-amizades article#dado1 p:nth-child(2){
-         color: #90949c;
-         font-size: 30px;
+.friendship__info__text2{
+    color: #90949c;
+    font-size: 30px;
+ }
+
+
+.friendship__info__confirm{
+    width: 156px;
+    height: 50px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #4267b2;
+    border: 2px solid #365899;
+    margin-top: 2px;
+ }
+
+
+ .friendship__info__confirm:hover{
+     background-color:hsl(221, 44%, 41%);
  }
 
 
 
-
-section#pedido-amizades article#dado1 div button#b1{
-     width: 156px;
-     height: 50px;
-     border-radius: 6px;
-     color: #fff;
-     font-size: 25px;
-     cursor: pointer;
-     background-color: #4267b2;
-     border: 2px solid #365899;
-     margin-top: 2px;
- }
-
-
-section#pedido-amizades article#dado1 div button#b1:hover{
-     background-color:#3b5998;
- }
-
-
-
-section#pedido-amizades article#dado1 div button#b2{
+ .friendship__info__delete{
      width: 220px;
      height: 50px;
      border-radius: 6px;
@@ -341,13 +341,13 @@ section#pedido-amizades article#dado1 div button#b2{
  }
 
 
-section#pedido-amizades article#dado1 div button#b2:hover{
+ .friendship__info__delete:hover{
      background-color: #ebedf0;
  }
 
 .normal{font-weight:normal;}
 
-section#pedido-amizades div#amigos{
+.friends_request{
 	display: flex;
 	color: #3b5998;
 	justify-content:space-between;
@@ -356,14 +356,15 @@ section#pedido-amizades div#amigos{
 	font-weight:bolder;
 }
 
-section#pedido-amizades div#amigos p:hover{
+.friends_request__text:hover{
 	background-color: #3b5998;
 	color: #fff;
 	cursor: pointer;
 }
 
 
-article#notificacao{
+/*notificacao de amizades*/
+.notification{
 	width: 100%;
 	height: 100%;
 	color: #4b4f56;
@@ -377,7 +378,7 @@ article#notificacao{
 }
 
 
-article#notificacao span{
+.notification__text1__square{
     min-width: 36px;
     height: 36px;
     border-radius: 4px;
@@ -386,25 +387,25 @@ article#notificacao span{
 }
 
 
-article#notificacao p:nth-child(1){
+.notification__text1{
 	color: #1d2129;
 	display: flex;
 	padding: 6px 0px;
 }
 
-article#notificacao p:nth-child(1):hover{
+.notification__text1:hover{
 	background: #d1e9ff;
     color: #3b5998;
 }
 
 
-article#notificacao p:nth-child(2){
+.notification__text2{
 	padding: 6px 0px 6px 8px;
 	font-weight: bold;
 	color: #3b5998;
 }
 
-article#notificacao p:nth-child(2):hover{
+.notification__text2:hover{
 	background-color: #3b5998;
 	color: #fff;
 	cursor: pointer;
@@ -412,7 +413,7 @@ article#notificacao p:nth-child(2):hover{
 
 /*Noticias*/
 
-article.noticia{
+.news{
 	width: 100%;
 	height: 100%;
 	background-color: #f5f6f7;
@@ -422,21 +423,20 @@ article.noticia{
     padding: 20px;
 	font-size: 32px;
 }
-article.noticia span#nome{
+.news__name{
 	font-weight: bold;
     font-size: 32px;
 	color:#3b5998;
 	cursor: pointer;
 }
 
-article.noticia span#nome:hover{
+.news__name:hover{
 	display: inline-block;
 	background-color: #3b5998;
     color: #fff;
 }
 
-
-article.noticia p{
+.news__text{
     color: #000;
     margin:auto;
     margin-top: 15px;
@@ -444,11 +444,12 @@ article.noticia p{
     font-size: 32px;
     font-family: arial, sans-serif;
 }
-article p.maiorp{
+
+.news__title{
 	font-size: 52px;
 }
 
-article.noticia div{
+.news__time{
     color: gray;
     margin:auto;
     margin-top: 15px;
@@ -458,24 +459,19 @@ article.noticia div{
 	padding-top: 28px;
 }
 
-article.noticia a{
+.news__link{
 	color: #2b55ad;
 	font-weight: normal;
 	display: inline-block;
 }
-article.noticia span{
-	color: gray;
-	font-weight: normal;
-	display: inline;
 
-}
 
-article.noticia a:hover{
-background: #2b55ad;
+.news__link--white:hover{
+    background: #2b55ad;
     color: #fff;
 }
 
-article.noticia div.contaner{
+.news__container{
 	background-color: #0b410b;
 	color:white;
 	width: 94%;
@@ -488,18 +484,19 @@ article.noticia div.contaner{
 	padding: 75px 135px;	
 }
 
-article.noticia img{
+.news img{
 	width: 400px;
 	height: 350px;
 	display: block;
 	margin: 40px 0 0 10px;
 }
 
-article.noticia span#estado{
+.news__state{
     color: #4b4f56;
 }
 
-a#vermais{
+
+.more__history{
 	display: block;
 	width: 96.5%;
 	height: 68px;
@@ -515,9 +512,10 @@ a#vermais{
 }
 
 
-/*Footer 1*/
 
-div#footer1{
+
+/*Footer 1*/
+.footer_first{
 	display: grid;
 	grid-template-columns: 100px auto;
 	background-color: #ebedf0;
@@ -526,14 +524,14 @@ div#footer1{
 }
 
 
-div#footer1 img{
+.footer_first__img{
  width: 100px;
  height: 100px;
  border: 5px solid #fff;
  outline: 2px solid #d0d1d5;
 }
 
-div#footer1 .divp p{
+.container__text{
 	display: flex;
 	color: #1d2129;
 	font-size: 37px;
@@ -542,39 +540,41 @@ div#footer1 .divp p{
 	padding: 4px 14px;
 }
 
-div#footer1 .divp p:hover{
+.container__text:hover{
 	background-color: #1d2129;
 	color: #ebedf0;
 }
 
-div#footer1 .divp main{
+.footer_first__info{
 	display: flex;
 	color: #1d2129;
-	padding: 4px;
+	padding: 4px 14px;
 }
 
-div#footer1 .divp main p{
+.footer_first__info__text{
 	font-size: 33px;
 	font-family: Arial,sans-serif;
 	font-weight: normal;
+	padding: 4px 14px;
 }
 
 
-div#footer1 .divp main span{
+.footer_first__info__point{
 	font-size: 30px;
 	font-family: Arial,sans-serif;
 	font-weight: bold;
 }
 
-div#footer1 .divp main p:hover{
+.footer_first__info__text:hover{
 	background: #1d2129;
     color: #ebedf0;
 }
 
 
-/*Footer 2*/
 
-div#footer2{
+
+/*Footer 2*/
+.footer_second{
 	padding: 0px 10px 10px 10px;
 	display: grid;
 	background-color: #ebedf0;
@@ -583,31 +583,32 @@ div#footer2{
 
 }
 
-#grid2{
+.footer_second--msg{
 grid-area: 1 / 2 /5 /3;
 }
 
-div#footer2 p{
+.footer_second__text{
 	font-size: 33px;
 	font-family: Arial,sans-serif;
 	font-weight: normal;
 	padding: 8px 0px 8px 8px;
 }
 
-div#footer2 p:hover{
+.footer_second__text:hover{
 	background: #1d2129;
     color: #ebedf0;
 }
 
-/*Footer 3*/
 
-div#footer3{
+
+/*Footer 3*/
+.footer_third{
   background-color: #444950;
   padding: 20px 20px 25px 20px;
 
 }
 
-div#footer3 div#info1{
+.footer_third__info{
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -616,68 +617,69 @@ div#footer3 div#info1{
   background-color: #d3d7dc;
   }
 
-  div#footer3 div#info1 img{
-       width:39.5px;
-	   height:39.5px;
-	   filter: grayscale(100%);
-	   border-radius:2px;
+.footer_third__img{
+	width:39.5px;
+	height:39.5px;
+	filter: grayscale(100%);
+	border-radius:2px;
+}
+
+.footer_third__input{
+	width:100%;
+	height:39.5px;
+	font-size: 32px;
+	background-color: transparent;
+	color: #4b4f56;
+	border: none;
+	padding-left: 5px;
 	}
 
-	div#footer3 div#info1 input#ftx1{
-		width:100%;
-		height:39.5px;
-		font-size: 32px;
-		background-color: transparent;
-		color: #4b4f56;
-		border: none;
-	 }
+	.footer_third__button{
+	width:180px;
+	height:52px;
+	border-radius: 3px;
+	border: 1px solid #365899;
+	background-color: #4267b2;
+	color: #fff;
+	font-size: 26px;
+	}
 
-	 div#footer3 div#info1 input#ftx2{
-		width:180px;
-		height:52px;
-		border-radius: 3px;
-		border: 1px solid #365899;
-		background-color: #4267b2;
-		color: #fff;
-		font-size: 26px;
-	 }
-
-	 div#footer3 div#info1 input#ftx2:hover{
-		background-color: #465e91;
-	 }
+	.footer_third__button:hover{
+	background-color: #465e91;
+	}
 
 
-	 /*Footer 4*/
+	/*Footer 4*/
+	.footer_fourth{
+	  padding: 0 10px;
+	  display: grid;
+	  grid-template-columns: repeat(2,auto);
+	  background-color: #444950;
+	}
 
-	 div#footer4{
-		padding: 0 10px;
-		display: grid;
-	    grid-template-columns: repeat(2,auto);
-		background-color: #444950;
-	 }
+	.footer_fourth__text{
+	  color: #bec3c9;
+	  font-size: 25px;
+	  font-family: Arial,sans-serif;
+	  font-weight: normal;
+	  padding: 6px;
+	}
 
-	 div#footer4 p{
-		color: #bec3c9;
-		font-size: 25px;
-		font-family: Arial,sans-serif;
-		font-weight: normal;
-		padding: 6px;
-	 }
+	.footer_fourth__text:hover{
+	  background: #dadde1;
+	  color: #1d2129
+	}
 
-	 div#footer4 p:hover{
-		background: #dadde1;
-		color: #1d2129
-	 }
+
 
 	 /*footer final*/
-
-	 div#footerf{
+	 .footer_final{
 		 padding: 30px 20px 22px 20px;
 		 text-align: center;
 		 background-color: #444950;
 	 }
 
-	 div#footerf a{
+	 .footer_final__link{
 		 display: block;
 		 width: 100%;
 		font-size: 33px;
@@ -689,7 +691,7 @@ div#footer3 div#info1{
 		padding:10.5px 10px;
 	 }
 
-	 div#footerf a:hover{
+	 .footer_final__link:hover{
 		background: #dadde1;
 		color: #1d2129;
 	}
