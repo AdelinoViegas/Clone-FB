@@ -10,65 +10,184 @@
 
 @media screen and (max-width:920px){
     
-    header#menuf section#n1 input#ctx{
+    .menu__top__input{
 	   min-width: 100px;
        height: 56px;
        font-size:24px;
        padding:0 5px;
        outline:none;
     }
+
+    .news__title{
+     font-size: 40px;
+   }
  
 
-    section#container-principal main#info2 img{
+    .section_pub__info2__img{
         width:80px;
         height:80px;
     }
 
-    section#container-principal main#info2 input,
-    section#container-principal main#info2 button{
+    .section_pub__info2__input,
+    .section_pub__info2__button{
         height:80px
     }
 
 
-    section#container-principal main#info2 input{
+    .section_pub__info2__input{
         font-size: 24px;
         padding-bottom: 36px;
         padding-left: 40px;
         border-radius:45px;
     }
 
-    div#footer2 p{
-        font-size: 28px;
-    }
 }
 
 @media screen and (max-width:720px){
-    div#footer4{
-		padding: 0 10px;
-	    grid-template-columns: repeat(1,auto);
+    .section_pub__info2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 120px auto;
+        align-items: center;
+        font-size: 30px;
+        padding: 23px 0px 0px 13px; 
 	 }
+
+    .section_pub__info2__button{
+        width:100%;
+        max-width:300px;
+        margin:20px auto 0px auto;
+        font-size: 30px;
+        grid-area: 2/1/2/3;
+   }
+
 }
 
 @media screen and (max-width:500px){
-    div#span1{
-        font-size: 24.5px; 
-        
+
+    .top {
+        flex-wrap: wrap;
+       }
+
+    .top__info1__paragraph{
+        height: 100%;
+       line-height:0px;
+       font-size:20px;
     }
 
-    div#interrog{
+    .menu__top {
+        grid-template-columns: 48px auto;
+    }
+
+    .menu__bottom {
+        font-size: 30px;
+     }
+
+    .menu__top__button {
+        margin-top:20px;
+        width: 150px;
+        height: 50px;
+        font-size: 24px;
+        grid-area: 2/1/2/3;
+}
+
+    .news__container{
+        word-break: break-word;
+        padding:60px 80px;
+    }
+
+    .friendship__info__text1{
+        font-size: 28px;
+    }
+
+    .friendship__info__text2{
+        font-size:25px;
+    }
+
+    .friendship__info__confirm{
+      width: 150px;
+      font-size: 20px;
+   }
+
+   .friendship__info__delete{
+      width: 200px;
+      font-size: 20px;
+  }
+
+  .friends_request__text{
+    font-size: 25px;
+  }
+
+   .notification__text1__square{
+        min-width: 30px;
+        height: 30px;
+   }
+
+    .news img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: 40px 0px 0px 0px;
+    }
+
+    .top__info1__circle{
         font-size: 24.5px;
         width: 34.5px;
         height:34.5px;
         line-height: 32px;
         padding: 2px;
-       border-radius: 20px;
+        border-radius: 20px;
+        line-height: 32px;
+        padding: 5px;
+        border-radius: 21px;
    }
 
-   div#span2{
-    font-size: 24px; 
- 	line-height: 58px;
- 	height: 58px;
- 	padding: 0px 15px;
+   .top__circle__interrogation{
+    position:relative;
+    top: -5px;
+    left: 2px;
+   }
+
+   .top__info2{
+    font-size: 20px; 
+    margin-right: 19px;
+    line-height: 48px;
+    height: 48px;
+    padding: 0px 20px;
+  }
+
+  .more__history {
+    font-size: 28px;
  }
+
+  .footer_first {
+    display: grid;
+    grid-template-columns:auto;
+    background-color: #ebedf0;
+    border-top: 3px solid #d0d1d5;
+    padding: 20px 20px 20px 20px;
+ }
+
+ .container__text {
+    display: flex;
+    color: #1d2129;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    padding: 15px 5px;
+}
+
+.footer_second__text {
+    font-size: 28px;
+}
+
+.footer_fourth__text {
+    font-size: 22px;
+}
+
+.footer_final__link {
+    font-size: 28px;
+}
+
 
 }
